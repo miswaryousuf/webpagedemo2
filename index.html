@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PepsiCo Website</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img class="logo" src="./img/logo.png" alt=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I like</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto cupiditate dolor voluptatem aperiam, delectus, suscipit porro voluptates facere tempore eveniet temporibus quasi ipsum odit. Tempore earum explicabo error inventore itaque.</p>
+                <a href="#">Veiw All Products</a>
+            </div>
+            <div class="imgBox">
+                <img class="pepsi" src="./img/pepsi001.png" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./img/pepsi001.png" alt="" onclick="imgSlider('./img/pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="./img/pepsi002.png" alt="" onclick="imgSlider('./img/pepsi002.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="./img/pepsi003.png" alt="" onclick="imgSlider('./img/pepsi003.png');changeBgColor('#1e1e1e')"></li>
+            <li><img src="./img/pepsi004.png" alt="" onclick="imgSlider('./img/pepsi004.png');changeBgColor('radial-gradient(#0062be, #d6166b)')"></li>
+            <li><img src="./img/pepsi005.png" alt="" onclick="imgSlider('./img/pepsi005.png');changeBgColor('radial-gradient(#f1e0c2, #d6166b)')"></li>
+            <li><img src="./img/pepsi006.png" alt="" onclick="imgSlider('./img/pepsi006.png');changeBgColor('radial-gradient(#d6166b, #000)')"></li>
+            <li><img src="./img/pepsi007.png" alt="" onclick="imgSlider('./img/pepsi007.png');changeBgColor('radial-gradient(#c25722, #000)')"></li>
+            <li><img src="./img/pepsi008.png" alt="" onclick="imgSlider('./img/pepsi008.png');changeBgColor('radial-gradient(#d0b37a, #000)')"></li>
+            <li><img src="./img/pepsi009.png" alt="" onclick="imgSlider('./img/pepsi009.png');changeBgColor('radial-gradient(#ead380, #30303d)')"></li>
+            <li><img src="./img/pepsi010.png" alt="" onclick="imgSlider('./img/pepsi010.png');changeBgColor('radial-gradient(#9f6b1a, #2d1808)')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
