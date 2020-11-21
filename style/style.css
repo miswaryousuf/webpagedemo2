@@ -193,4 +193,16 @@ header ul li a {
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 991px) {
+  section {
+    padding: 40px;
+  }
+  header {
+    padding: 20px 40px;
+  }
+  header .logo {
+    position: relative;
+    max-width: 60px;
+  }
+}
